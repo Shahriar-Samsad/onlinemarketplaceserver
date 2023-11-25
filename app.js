@@ -13,11 +13,13 @@ const bannerRoute = require('./src/routes/homeRoutes/banner.routes');
 const insideRoute = require('./src/routes/inside.routes');
  
 const paymentRoute = require('./src/routes/payment.routes');
+const reviewRoute = require('./src/routes/review.routes');
 app.use("/api/v1/", bannerRoute);
       
      app.use("/api/v1/", insideRoute);
    app.use("/api/v1/", userRoute);
    app.use("/api/v1/", productRoute);
    app.use("/api/v1/", contactRoute);
-   app.use("/api/v1/", paymentRoute);
+   app.use("/api/v1/", paymentRoute); 
+   app.use("/api/v1/", reviewRoute);
 module.exports = app; 
